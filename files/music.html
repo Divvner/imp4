@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Flyte Music</title>
+
+	<link rel="stylesheet" type="text/css" href="music.css">
+	<link rel="stylesheet" href="../loader/loader.css">
+	<link rel="stylesheet" href="music-media.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="../css/reduce.css">
+</head>
+
+<body>
+
+	<!-- include JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+		</script>
+
+	<section class="menu">
+		<div class="menu-nav">
+			<div class="navbar">
+				<a href="../index.html" class="a">Главная</a>
+				<a href="music.html" class="a">Music</a>
+				<a href="#" class="a">Автор</a>
+				<a href="#" class="a">Labels</a>
+				<a href="#" class="menu-link" style="font-style: italic;"><span style="color: #29d93b;">Flyte</span></a>
+			</div>
+		</div>
+	</section>
+
+	<main class="main">
+		<div class="main-block">
+			<div class="main-block__welcome">
+				<div class="main-block__logo">
+					<img src="../1.png" alt="flyte">
+				</div>
+				<div class="main-block__subtitle">
+					<p><span style="text-transform: lowercase; font-size: 1.1em; color: lime;">Flyte</span> помогает наслаждаться музыкой, <br>выбранной вами!</p>
+				</div>
+				<div class="main-block__text">
+					<p>Выберете музыку из предложенных нами жанров</p>
+				</div>
+				<div class="main-block__btn">
+					<a href="#scroll" class="scroll-to">
+						<p>Let's go!</p>
+					</a>
+				</div>
+			</div>
+			<div class="main-block__slider single-item">
+				<div><img src="../circles/indie-dance.jpg"></div>
+				<div><img src="../circles/drumstep.webp"></div>
+				<div><img src="../circles/electro.webp"></div>
+				<div><img src="../circles/mel-dubstep.webp"></div>
+				<div><img src="../circles/dubstep.webp"></div>
+			</div>
+		</div>
+	</main>
+
+	<div class="pos">
+		<div class="flip-card left" id="scroll">
+		  	<div class="flip-card-inner">
+		  	 	<div class="flip-card-front">
+					<img src="../images/Front/army.webp" alt="army" id="background">	
+					<div class="card-front__title">
+						<p>Neoni - <span style="font-style: italic;">Army</span></p>
+					</div>	
+					<div class="card-front__play">
+						<img src="../svg/play.svg">
+					</div>
+					<div class="card-front-border__bottom">
+						<div>
+							<p>Trap</p>
+							<img src="../circles/trap.webp" alt="">
+						</div>
+					</div>
+		  	 	</div>
+		  	 	<div class="flip-card-back">
+					<div class="card-back__genre">
+						<p>Trap</p>
+					</div>
+					<div class="card-back__title">
+						<p>Army</p>
+					</div>
+					<div class="card-back__img">
+						<img src="../images/cards/army.webp">
+					</div>
+					<div class="card-back__audio">
+						<img class="soundbutton paused" src="../images/sound.gif" alt="Alt">
+						<audio class="audio cont" preload="auto" src="../media/weak-music/army.mp3" loop onplay="clickPause([0])"></audio>
+					</div>
+					<div class="card-back__video">
+						<video class="play_video" src="../media/weak-video/army1.mkv" loop preload="auto" muted></video>
+					</div>
+					<div class="music-container" id="music-container">
+						<div class="music-info">
+							<div class="progress-container" id="progress-container">
+								<div class="progress" id="progress"></div>
+							</div>
+						</div>
+						<audio src="../media/weak-music/fullarmy.mp3" id="audio" class="cont" loop onplay="clickPause([1])" controls></audio>
+						<div class="navigation">
+						<button id="play" class="btn-play">
+							<img src="../svg/play.svg">
+						</button>
+					</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- 2 -->
+	<div class="pos">
+		<div class="flip-card left" id="scroll">
+		  	<div class="flip-card-inner">
+		  	 	<div class="flip-card-front dnb">
+					<img src="../images/Front/cuagain.webp" alt="army" id="background">	
+					<div class="card-front__title">
+						<p>Cartoon - <span style="font-style: italic;">CU Again</span></p>
+					</div>	
+					<div class="card-front__play">
+						<img src="../svg/play.svg">
+					</div>
+					<div class="card-front-border__bottom dnb">
+						<div>
+							<p>Drum & Bass</p>
+							<img src="../circles/drum&bass.webp" alt="">
+						</div>
+					</div>
+		  	 	</div>
+		  	 	<div class="flip-card-back_2 dnb_back">
+					<div class="card-back__genre">
+						<p>DnB</p>
+					</div>
+					<div class="card-back__title">
+						<p>CU Again</p>
+					</div>
+					<div class="card-back__img_2">
+						<img src="../images/cards/ncslife.webp">
+					</div>
+					<div class="card-back__audio">
+						<img class="soundbutton_2 paused" src="../images/sound.gif" alt="Alt">
+						<audio class="audio_2 cont" preload="auto" src="../media/weak-music/cuagain.mp3" loop onplay="clickPause([2])"></audio>
+					</div>
+					<div class="card-back__video_2">
+						<video class="play_video_2" src="../media/weak-video/cuagain.mkv" loop preload="auto" muted></video>
+					</div>
+					<div class="music-container" id="music-container_2">
+						<div class="music-info">
+							<div class="progress-container" id="progress-container_2">
+								<div class="progress" id="progress_2"></div>
+							</div>
+						</div>
+						<audio src="../media/weak-music/fullcuagain.mp3" id="audio_2" class="cont" loop onplay="clickPause([3])" controls></audio>
+						<div class="navigation">
+						<button id="play_2" class="btn-play">
+							<img src="../svg/play.svg">
+						</button>
+					</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- 3 -->
+	<div class="pos">
+		<div class="flip-card left" id="scroll">
+		  	<div class="flip-card-inner">
+		  	 	<div class="flip-card-front fb">
+					<img src="../images/Front/lightitup.webp" alt="army" id="background">	
+					<div class="card-front__title">
+						<p>Robin Husten - <span style="font-style: italic;">Light It Up</span></p>
+					</div>	
+					<div class="card-front__play">
+						<img src="../svg/play.svg">
+					</div>
+					<div class="card-front-border__bottom fb">
+						<div>
+							<p>Future Bass</p>
+							<img src="../circles/future-bass.webp" alt="">
+						</div>
+					</div>
+		  	 	</div>
+		  	 	<div class="flip-card-back_3">
+					<div class="card-back__genre">
+						<p>FB</p>
+					</div>
+					<div class="card-back__title">
+						<p>Light It Up</p>
+					</div>
+					<div class="card-back__img_3">
+						<img src="../images/cards/lightitup.webp">
+					</div>
+					<div class="card-back__audio">
+						<img class="soundbutton_3 paused" src="../images/sound.gif" alt="Alt">
+						<audio class="audio_3 cont" preload="auto" src="../media/weak-music/lightitup.mp3" loop onplay="clickPause([4])"></audio>
+					</div>
+					<div class="card-back__video_3">
+						<video class="play_video_3" src="../media/weak-video/lightitup.mkv" loop preload="auto" muted></video>
+					</div>
+					<div class="music-container" id="music-container_3">
+						<div class="music-info">
+							<div class="progress-container" id="progress-container_3">
+								<div class="progress" id="progress_3"></div>
+							</div>
+						</div>
+						<audio src="../media/weak-music/fulllightitup.mp3" id="audio_3" class="cont" loop onplay="clickPause([5])" controls></audio>
+						<div class="navigation">
+						<button id="play_3" class="btn-play">
+							<img src="../svg/play.svg">
+						</button>
+					</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Menu -->
+
+	<div class="mobile">
+		<div>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">
+						<p><span style="color: rgb(201, 198, 6);">Главная</span></p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Music</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Автор</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p>Labels</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<p><span style="color: rgb(34, 207, 46);">Flyte</span></p>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="nothing"></div>
+
+	<div id="preloader">
+		<div id="loader">
+			<div class="loader"></div>
+			<div class="loader-author">
+				<p>© Sergei Pavlov</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		// check repeat
+		let a = document.getElementsByClassName('cont');
+
+		function clickPause(b) {
+			for (i = 0; i < a.length; i++) {
+				if (!(i == b)) { a[i].pause(); a[i].currentTime = 0; };
+			}
+		}
+
+	</script>
+
+	<script src="music.js" defer></script>
+	<script src="../slick/slick.min.js"></script>
+
+</body>
+
+</html>

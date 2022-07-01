@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+	font-size: calc(var(--index) * .8);
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+/*
+
+	Menu
+
+*/
+
+.menu-nav {
+	display: flex;
+	justify-content: center;
+}
+
+.navbar {
+	font-family: 'Montserrat';
+	z-index: 100;
+	position: fixed;
+	overflow: hidden;
+	background-color: black;
+	border: none;
+	top: 0;
+}
+
+.navbar .a {
+	float: left;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+.navbar .a:hover {
+	background-color: #4df75e;
+	color: black;
+	font-weight: 600;
+	border-radius: 5%;
+	transition: 0.4s;
+}
+
+.menu-link {
+	float: left;
+	font-size: 18px;
+	font-weight: 600;
+	color: #29d93b;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+.menu-link:hover {
+	color: black;
+	font-weight: 600;
+	transition: 0.4s;
+}
+
+/* 
+
+	main
+
+*/
+
+.main {
+	position: relative;
+	top: 20%;
+}
+
+.main-block {}
+
+.main-block__welcome {
+	position: absolute;
+	left: 10%;
+}
+
+.main-block__logo {}
+
+.main-block__logo img {
+	width: 180px;
+	height: 74px;
+}
+
+.main-block__subtitle {
+	margin-top: 20px;
+}
+
+.main-block__subtitle p {
+	font-size: 1.4em;
+	font-family: 'Montserrat';
+	letter-spacing: 0.05em;
+	font-style: italic;
+}
+
+.main-block__text {
+	margin-top: 50px;
+}
+
+.main-block__text p {
+	font-size: 1.1em;
+	font-family: 'Raleway';
+	letter-spacing: 0.02em;
+	line-height: 20px;
+}
+
+.main-block__btn {
+	margin-top: 50px;
+	width: 170px;
+	z-index: 100;
+}
+
+.main-block__btn a {
+	display: block;
+	text-decoration: none;
+	text-transform: none;
+	transition: 0.4s ease-in-out;
+	border: 2px solid rgb(212, 21, 110);
+}
+
+.main-block__btn a p {
+	display: block;
+	font-family: 'Montserrat';
+	color: #fff;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+.main-block__btn a:hover {
+	transition: 0.4s ease-in-out;
+	border: 2px solid rgb(192, 14, 177);
+}
+
+/* 
+
+	slider
+
+*/
+
+.single-item {
+	position: absolute;
+	left: 65%;
+}
+
+.main-block__slider {}
+
+.main-block__slider img {
+	width: 330px;
+	height: 320px;
+	border-radius: 50%;
+}
+
+/* 
+
+	soundbutton
+
+*/
+
+.soundbutton {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	transition: 0.3s ease-in-out;
+	opacity: .75;
+	top: 70px;
+	cursor: pointer;
+}
+
+.soundbutton:hover {
+	transition: 0.3s ease-in-out;
+	transform: scale(0.9);
+}
+
+.nothing {
+	position: absolute;
+	top: 2000px;
+	width: 1px;
+	height: 1px;
+}
+
+/* 
+
+	cards/tables
+
+*/
+
+/* Set the size of the flip card, 
+   center a div horizontally on a page 
+   and make a 3D effect */
+
+.pos {
+	position: relative;
+	top: 300px;
+	margin: 200px 0;
+}
+
+.flip-card {
+	margin: 0 auto;
+	width: 350px;
+	height: 500px;
+	perspective: 1000px;
+}
+
+/* Container for position the front and back side */
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	box-shadow: 0px 4px 15px rgba(11, 201, 8, 0.537);
+	border-radius: 12px;
+	background: linear-gradient(45deg, rgb(10, 71, 33) 9%, rgb(25, 189, 52) 49%, rgb(9, 84, 12));
+}
+
+.card-back__img {
+	position: relative;
+	top: 30px;
+	transition: 0.4s;
+}
+
+.card-back__img img {
+	width: 180px;
+	height: 180px;
+	box-shadow: 0 0 25px 1px #000;
+}
+
+
+.flip-card-front .card-front__title p {
+	color: #000;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	line-height: 30px;
+	letter-spacing: 0.02em;
+	font-size: 1.5em;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.card-front__play {
+	margin-top: 10%;
+}
+
+.card-front__play img {
+	width: 50px;
+	height: 50px;
+}
+
+.card-front-border__bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(45deg, rgb(93, 171, 0), rgb(7, 111, 14) 53%, rgb(12, 116, 15));
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 0 5px #000;
+}
+
+.card-front-border__bottom div img {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	transform: translate(-100%, -100%);
+}
+
+.card-front-border__bottom div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.flip-card-front .card-front-border__bottom div p {
+	color: #000;
+	font-family: 'Raleway';
+	font-style: italic;
+	font-weight: 600;
+	display: flex;
+	justify-content: сenter;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+}
+
+/* rotateY do an horizontal flip when you move the mouse over the flip box container. */
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(-180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 12px;
+}
+
+/* Style the front side */
+.flip-card-front {}
+
+.card-front__play img {
+	width: 100%;
+}
+
+#background {
+	width: 100%;
+	box-shadow: 0 0 25px #000;
+}
+
+.flip-card-front button {
+	background: transparent;
+	border: 2px solid #ed1186;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 150px;
+}
+
+.flip-card-front button p {
+	color: #fff;
+	font-family: 'Raleway';
+	font-weight: 600;
+	font-style: italic;
+}
+
+.flip-card-front p {
+	margin-left: 5px;
+	margin-top: 0px;
+	font-size: 1.5rem;
+	color: #141c3a;
+	width: 60%;
+}
+
+/* Style the back side */
+.flip-card-back {
+	text-align: center;
+	background: linear-gradient(315deg, rgb(9, 3, 41), rgb(6, 2, 26), rgb(109, 0, 135));
+	color: white;
+	transform: rotateY(180deg);
+	box-shadow: 0 0 15px #4f018a;
+}
+
+/* 
+
+	genre back side
+
+*/
+
+.card-back__genre {
+	position: absolute;
+	width: 20px;
+	height: 140px;
+	background: transparent;
+	right: 0;
+	top: 50%;
+	margin-top: -60px;
+	border-radius: 0 15px 15px 0;
+	z-index: 1;
+	transition: 0.4s;
+}
+
+.card-back__genre p {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	color: #fff;
+	font-size: 0.9em;
+	font-family: 'Raleway';
+	font-weight: 600;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	text-transform: uppercase;
+}
+
+.flip-card:hover .card-back__genre {
+	transition: 0.4s;
+	transform: translate(110%, 0);
+	background-color: #2c0157;
+}
+
+.card-back__title {
+	position: absolute;
+	width: 140px;
+	height: 20px;
+	background: transparent;
+	left: 50%;
+	margin-left: -70px;
+	top: 0;
+	border-radius: 15px 15px 0 0;
+	z-index: 1;
+	transition: 0.4s;
+}
+
+.card-back__title p {
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translate(0, -50%);
+	color: #fff;
+	font-size: 0.9em;
+	font-family: 'Raleway';
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+.flip-card:hover .card-back__title {
+	transition: 0.4s;
+	transform: translate(0, -100%);
+	background-color: #2c0157;
+}
+
+.flip-card-back.wave {
+	background: url('../images/sound-wave.gif') top center no-repeat;
+	object-fit: cover;
+}
+
+.card-back__video {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	z-index: -100;
+	transition: 0.4s;
+}
+
+.card-back__video video {
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+}
+
+/* Style link */
+a {
+	color: gold;
+	text-decoration: none;
+}
+
+/* 
+
+	Full audio progress
+
+*/
+
+.music-container {
+	background-color: #000;
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	bottom: 0;
+	border-radius: 0 0 10px 10px;
+}
+
+/* 
+
+	button-play
+
+*/
+
+.btn-play {
+	transition: 0.4s;
+	position: absolute;
+	background: transparent;
+	cursor: pointer;
+	left: 50%;
+	bottom: 40%;
+	border: none;
+	transform: translate(-50%, 0);
+}
+
+.btn-play img {
+	width: 40px;
+	height: 40px;
+	filter: invert(100%);
+}
+
+.progress-container {
+	background: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px 0;
+	height: 10px;
+	width: 70%;
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 0 0 15px rgb(74, 74, 74);
+}
+
+/* styling the actual progress bar and making it flow along with the song*/
+.progress {
+	background-color: #18b300;
+	border-radius: 5px;
+	height: 100%;
+	width: 0%;
+	transition: width 0.1s linear;
+}
+
+/* 
+
+	drum & bass
+
+*/
+
+.dnb {
+	background: linear-gradient(45deg, rgb(244, 172, 235), rgb(197, 93, 194), rgb(73, 22, 88));
+	box-shadow: 0px 4px 15px rgba(209, 16, 190, 0.537);
+}
+
+.fb {
+	background: linear-gradient(45deg, rgb(127, 43, 226), rgb(96, 8, 139) 41%, rgb(73, 6, 152));
+	box-shadow: 0px 4px 15px rgb(24, 9, 138);
+}
+
+@keyframes filter {
+
+	/* Ctrl + S */
+	0%,
+	100% {
+		filter: invert(0%);
+	}
+
+	50% {
+		filter: invert(100%);
+	}
+
+}
+
+audio::-webkit-media-controls {
+	display: none;
+}
+
+audio::-ms-media-controls {
+	display: none;
+}
+
+audio::-moz-media-controls {
+	display: none;
+}
+
+audio::-o-media-controls {
+	display: none;
+}

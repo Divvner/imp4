@@ -1,0 +1,141 @@
+/* 2 */
+
+.soundbutton_2 {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	transition: 0.3s ease-in-out;
+	opacity: .75;
+	top: 70px;
+	cursor: pointer;
+}
+
+.soundbutton_2:hover {
+	transition: 0.3s ease-in-out;
+	transform: scale(0.9);
+}
+
+.card-back__img_2 {
+	position: relative;
+	top: 30px;
+	transition: 0.4s;
+}
+
+.card-back__img_2 img {
+	width: 180px;
+	height: 180px;
+	box-shadow: 0 0 25px 1px #000;
+}
+
+.flip-card-back_2.wave {
+	background: url('../images/sound-wave.gif') top center no-repeat;
+	object-fit: cover;
+}
+
+.card-back__video_2 {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	z-index: -100;
+	transition: 0.4s;
+}
+
+.card-back__video_2 video {
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+}
+
+.flip-card-back_2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 12px;
+}
+
+.flip-card-back_2 {
+	text-align: center;
+	background: linear-gradient(135deg, rgb(207, 154, 205), rgb(104, 14, 120), rgb(83, 6, 84));
+	box-shadow: 0px 4px 15px rgba(239, 20, 217, 0.537);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+#progress_2 {
+	background-color: #d61595;
+}
+
+/* 3 */
+
+.soundbutton_3 {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	transition: 0.3s ease-in-out;
+	opacity: .75;
+	top: 70px;
+	cursor: pointer;
+}
+
+.soundbutton_3:hover {
+	transition: 0.3s ease-in-out;
+	transform: scale(0.9);
+}
+
+.card-back__img_3 {
+	position: relative;
+	top: 30px;
+	transition: 0.4s;
+}
+
+.card-back__img_3 img {
+	width: 180px;
+	height: 180px;
+	box-shadow: 0 0 25px 1px #000;
+}
+
+.flip-card-back_3.wave {
+	background: url('../images/sound-wave.gif') top center no-repeat;
+	object-fit: cover;
+}
+
+.card-back__video_3 {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	z-index: -100;
+	transition: 0.4s;
+}
+
+.card-back__video_3 video {
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+}
+
+.flip-card-back_3 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	border-radius: 12px;
+}
+
+.flip-card-back_3 {
+	text-align: center;
+	background: linear-gradient(135deg, rgb(3, 4, 41), rgb(72, 0, 107) 71%);
+	box-shadow: 0px 4px 15px rgb(24, 9, 138);
+	color: white;
+	transform: rotateY(180deg);
+}
+
+#progress_3 {
+	background-color: #630894;
+}
